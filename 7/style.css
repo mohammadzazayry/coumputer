@@ -1,0 +1,59 @@
+:root {
+    --bgcolor:#1d1a39;
+    --maincolor: f39f5a;
+    --secbgcolor: #451952;
+    --textcolor: #e8bcb9;
+
+
+}
+body{
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+
+p {
+    color: green;
+}
+
+
+
+
+
+#mohammad{
+    color: red;
+}
+
+
+
+
+
+.third{
+    color: blue;
+}
+
+
+
+
+#mohammad,
+.third,
+h2{
+    font-size: 18px;
+}
+
+
+
+
+.parent .child h2{
+    text -decoration: line-through
+    font-size: 0.8em;
+}
+
+
+input[type='password'] {
+    border: 2px solid green ;
+    border-radius: 15px;
+}
+
+.child {
+    font-size: 20px;
+}

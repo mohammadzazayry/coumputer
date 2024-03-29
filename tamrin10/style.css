@@ -1,0 +1,49 @@
+/* table {
+    border: 2px solid black;
+    border-collaps: collaps;
+    text-align: center;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+tr: first-child {
+    background: gray;
+}
+
+tr:last-child {
+    background: blue;
+}
+
+tr:nth-child(even){
+    background: red;
+}
+
+tr:nth-child(odd){
+    background: green;
+}
+
+/* input {
+    border: 2px solid blue;
+}
+
+body {
+
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-ground;
+    align-items: center;
+    background: gray;
+    width: 200%;
+    margin:0;
+    color: white;
+}
+
+

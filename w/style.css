@@ -1,0 +1,293 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter_VariableFont;
+    src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+body {
+    width: 100vw;
+    font-family: "Inter_VariableFont";
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 60px 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #050136;
+}
+#Menu img {
+    display: none;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex: 2.5;
+    padding-right: 100px;
+}
+
+#article_image {
+    flex: 1.2;
+}
+
+#article_image img {
+    max-width: 100%;
+    padding-bottom: 100px;
+}
+
+#article_text {
+    display: flex;
+    flex: 1;
+}
+
+#TheBright {
+    flex: 1;
+    font-weight: 100;
+    font-size: 100px;
+    padding-right: 100px;
+}
+
+#WeDive {
+    flex: 1.5;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 100px;
+    color: #05108f;
+}
+
+#WeDive button {
+    width: 80%;
+    min-width: 100px;
+    height: 50px;
+    background-color: rgb(255, 71, 184);
+    color: rgb(21, 2, 80);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+aside {
+    flex: 1;
+    background-color: #00001a;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+aside h1 {
+    color: #784eea;
+}
+
+aside h3 {
+    color: rgb(245, 12, 12);
+    padding-bottom: 7px;
+    font-size: 30px;
+}
+
+aside p {
+    color: #0814ec;
+    line-height: 1.5em;
+    font-size: 30px;
+}
+
+aside hr {
+    border-top: 1px solid #0b16e7;
+    border-bottom: 1px solid #0914ec;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+footer > a {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+}
+
+footer > a > div {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 80px;
+    max-height: 50px;
+    padding-right: 50px;
+}
+
+footer h1 {
+    color: #28056d;
+    font-size: 50px;
+}
+
+footer h2 {
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
+footer p {
+    font-size: 30px;
+    color: #050a6b;
+    line-height: 16px;
+}
+
+
+@media (max-width: 640px) {
+    body {
+        width: 80%;
+        padding: 0px 10px 50px;
+    }
+
+    
+
+    #Menu {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        right: 0px;
+        background-color: #00001a;
+        padding: 15px 0px;
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 50px;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(146, 187, 0);
+    }
+
+    nav ul li:hover a {
+        color: rgb(240, 61, 61);
+    }
+
+    
+
+    #Menu > img:hover + nav,
+    #Menu > nav:hover {
+        display: block;
+    }
+
+    #Menu img {
+        display: block;
+    }
+
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    #article_text {
+        display: block;
+    }
+
+    #TheBright {
+        font-weight: 200;
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    #WeDive {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    #WeDive button {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    
+
+    aside {
+        display: block;
+        padding: 20px 40px;
+    }
+
+    aside hr {
+        margin: 20px 0px;
+    }
+
+    
+    footer {
+        display: block;
+    }
+
+    footer > a {
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 960px) and (min-width: 641px) {
+    #TheBright {
+        font-size: 18px;
+        flex: 1.2;
+    }
+
+    #WeDive button {
+        margin-top: 20px;
+    }
+
+    article {
+        flex: 1.7;
+    }
+}
